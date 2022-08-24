@@ -1,12 +1,8 @@
 from flask import Response, jsonify, render_template, request
 from flask_restful import Resource
 
-from office_table import (
-    create_office_db_table,
-    delete_employee_by_id,
-    get_office_data,
-    insert_office,
-)
+from office_table import (create_office_db_table, delete_employee_by_id,
+                          get_office_data, insert_office)
 
 
 class OfficeData(Resource):

@@ -1,13 +1,8 @@
 from flask import Response, render_template, request
 from flask_restful import Resource
 
-from persons_table import (
-    create_persons_db_table,
-    get_persons,
-    insert_person,
-    update_birthday_age,
-    update_person_name,
-)
+from persons_table import (create_persons_db_table, get_persons, insert_person,
+                           update_birthday_age, update_person_name)
 
 
 class Persons(Resource):
